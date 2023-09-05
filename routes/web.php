@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Htpp\Controller\SiswaController;
+use App\Http\Controllers\SiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +14,13 @@ use App\Htpp\Controller\SiswaController;
 |
 */
 
-Route::get('/index', function () {
-    return view('index');
-});
+// Route::get('/index', function () {
+//     return view('index');
+// });
 
 Route::get('/persyaratan', function () {
-return view('persyaratan');
+    return view('persyaratan');
 });
 
-// route::get('/index', [SiswaController::class, 'index']);
+route::get('/index', [SiswaController::class, 'index']);
 // route::get('/persyaratan', [SiswaController::class, 'persyaratan']);
