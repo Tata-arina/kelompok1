@@ -23,6 +23,17 @@
                     </div>
                 </div>
 
+                <div class="widget">
+                    <div class="jdl-widget">
+                        <h5>Jam Sekarang</h5>
+                    </div>
+                    <div class="isi-widget">
+                    <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hiddenborder:0;margin:5;padding:5;width:180px;height:180px;"src="https://www.clocklink.com/html5embed.php?clock=042&timezone=JOG&color=red&size=356&Title=&Message=&Target=&From=2023,1,1,0,0,0&Color=red"></iframe>
+                    </div>
+                </div>
+
+
+
 
                 <div class="widget">
                     <div class="jdl-widget">
