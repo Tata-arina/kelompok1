@@ -20,7 +20,7 @@ class SiswaController extends Controller
      */
     public function persyaratan()
     {
-        // return view('persyaratan');
+        return view('persyaratan');
     }
 
     /**

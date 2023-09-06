@@ -1,7 +1,5 @@
 @extends('mainapps')
-@section('title')
-    persyaratan
-@endsection
+@section('title') persyaratan @endsection
 @section('content')
     <section id="Beranda">
         <div class="container-fluid" id="baground">
@@ -18,7 +16,7 @@
             <div class="justify-content-center align-content-center">
                 <div class="card w-75 border-secondary">
                     <div class="card-header">Syarat Pendaftaran PPDB:</div>
-                    <div class="card-body text-secondary">
+                    <div class="card-body text-black">
                         <p class="card-text">
                         <ol>
                             <li>

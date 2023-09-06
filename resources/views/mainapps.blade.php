@@ -71,9 +71,9 @@
         }
 
         .sidebar {
-            width: 20%;
+            width: 23%;
             float: left;
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         .widget {
@@ -84,14 +84,22 @@
             background-color: #f1a415;
             color: white;
             text-align: center;
-            padding: 5px;
+            padding: 6px;
             border-radius: 8px 8px 0px 0px
+        }
+
+        .jdl-widget h5{
+            height: 15px;
         }
 
         .isi-widget {
             background-color: rgb(201, 198, 192);
             padding: 6px;
             border-radius: 0px 0px 8px 8px
+        }
+
+        .isi-widget img{
+          
         }
     </style>
     <!-- css -->
@@ -206,5 +214,4 @@
     </script>
     <!-- js -->
 </body>
-
 </html>

@@ -18,9 +18,9 @@ use App\Http\Controllers\SiswaController;
 //     return view('index');
 // });
 
-Route::get('/persyaratan', function () {
-    return view('persyaratan');
-});
+// Route::get('/persyaratan', function () {
+//     return view('persyaratan');
+// });
 
 route::get('/index', [SiswaController::class, 'index']);
-// route::get('/persyaratan', [SiswaController::class, 'persyaratan']);
+route::get('/persyaratan', [SiswaController::class, 'persyaratan']);
