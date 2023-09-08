@@ -19,6 +19,7 @@ use App\Http\Controllers\AdminController;
 route::get('/dashboard', [AdminController::class, 'dashboard']);
 route::get('/pengumuman', [AdminController::class, 'pengumuman']);
 
+
 route::get('/index', [SiswaController::class, 'index']);
 route::get('/persyaratan', [SiswaController::class, 'persyaratan']);
 route::get('/pendaftaran', [SiswaController::class, 'pendaftaran']);

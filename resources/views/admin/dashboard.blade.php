@@ -1,4 +1,4 @@
-@extends('admin.mainappss')
+@extends('admin.mainapps')
 @section('title')Dashboard @endsection
 @section('content')
     <section id="header" class="header">

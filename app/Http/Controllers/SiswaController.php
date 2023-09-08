@@ -29,6 +29,20 @@ class SiswaController extends Controller
     }
 
     public function pengumuman()
+
+    {
+        return view('user.pengumuman');
+    }
+
+    public function dashboard()
+    {
+        return view('admin.dashboard');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
     {
         return view('user.pengumuman');
     }

@@ -1,4 +1,4 @@
-@extends('admin.mainappss')
+@extends('admin.mainapps')
 @section('title')Pengumuman @endsection
 @section('content')
     <section id="pengumuman">

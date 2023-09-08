@@ -28,18 +28,8 @@
         
 
 
-
-
-
-
-
-
-
     </section>
     
-
-
-
 
 
 @endsection

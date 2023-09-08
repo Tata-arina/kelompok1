@@ -1,6 +1,7 @@
 @extends('user.mainapps')
 @section('title') persyaratan @endsection
 @section('content')
+<!-- persyaratan -->
     <section id="Beranda">
         <div class="container-fluid" id="baground">
             <div class="container text-center" style="margin-top: 70px;" id="pembuka">
@@ -49,3 +50,4 @@
         </div>
     </section>
 @endsection
+
