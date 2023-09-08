@@ -1,4 +1,4 @@
-@extends('mainapps')
+@extends('user.mainapps')
 @section('title') index @endsection
 @section('content')
 

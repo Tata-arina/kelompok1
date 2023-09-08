@@ -1,4 +1,4 @@
-@extends('mainapps')
+@extends('user.mainapps')
 @section('title') persyaratan @endsection
 @section('content')
     <section id="Beranda">

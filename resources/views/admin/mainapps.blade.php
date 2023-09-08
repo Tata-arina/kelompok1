@@ -19,10 +19,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <!-- css -->
     <style type="text/css">
         :root {
-            --warna-bg-info: #a71d0b;
+            --warna-bg-info: #1b5b9c;;
         }
 
         body {
@@ -59,7 +62,7 @@
         }
 
         #navbarNav a:hover {
-            color: #919496;
+            color: white;
         }
 
         #navbarNav a {
@@ -98,13 +101,9 @@
             border-radius: 0px 0px 8px 8px
         }
 
-        .isi-widget img{
-          
-        }
     </style>
     <!-- css -->
-
-
+    
 </head>
 
 <body>
@@ -122,13 +121,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index">Beranda</a>
+                        <a class="nav-link active" aria-current="page" href="/dashboard">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/persyaratan">Persyaratan</a>
+                        <a class="nav-link active" aria-current="page" href="/pengumuman">Pengumuman</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/pendaftaran">Pendaftaran</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-house-door-fill"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/login"></a></li>
+                            <li><a class="dropdown-item" href="/sign up"></a></li>
+                        </ul> 
                     </li>
                 </ul>
             </div>
