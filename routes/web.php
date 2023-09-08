@@ -21,6 +21,10 @@ Route::get('/beranda', function () {
     return view('beranda');
 });
 
+Route::get('/persyaratan', function () {
+    return view('persyaratan');
+});
+
 // Route::get('/portal', function () {
 //     return view('portal');
 // });

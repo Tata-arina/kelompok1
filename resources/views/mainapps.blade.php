@@ -95,10 +95,10 @@
                         <a class="nav-link active" aria-current="page" href="Beranda">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Tentang">Tentang</a>
+                        <a class="nav-link active" aria-current="page" href="tentang">Tentang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Persyaratan">Persyaratan</a>
+                        <a class="nav-link active" aria-current="page" href="persyaratan">Persyaratan</a>
                     </li>
 
                 </ul>
