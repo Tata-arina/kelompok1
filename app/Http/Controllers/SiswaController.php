@@ -23,6 +23,11 @@ class SiswaController extends Controller
         return view('persyaratan');
     }
 
+    public function pendaftaran()
+    {
+        return view('pendaftaran');
+    }
+
     /**
      * Store a newly created resource in storage.
      */

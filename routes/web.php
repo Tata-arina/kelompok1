@@ -24,3 +24,4 @@ use App\Http\Controllers\SiswaController;
 
 route::get('/index', [SiswaController::class, 'index']);
 route::get('/persyaratan', [SiswaController::class, 'persyaratan']);
+route::get('/pendaftaran', [SiswaController::class, 'pendaftaran']);
