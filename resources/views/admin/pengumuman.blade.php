@@ -9,9 +9,9 @@
                     <tr>
                     <th scope="col">No</th>
                     <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                    <th scope="col">Option</th>
+                    <th scope="col">Second</th>
+                    <th scope="col">Third</th>
+                    <th scope="col">Fourth</th>
                     </tr>
                 </thead>
                 <tbody>

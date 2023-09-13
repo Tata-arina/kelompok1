@@ -124,7 +124,7 @@
                         <a class="nav-link active" aria-current="page" href="/dashboard">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/pengumuman">Pengumuman</a>
+                        <a class="nav-link active" aria-current="page" href="/pengumumann">Pengumuman</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/pendaftaran">Pendaftaran</a>

@@ -16,12 +16,16 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-route::get('/dashboard', [AdminController::class, 'dashboard']);
-route::get('/pengumuman', [AdminController::class, 'pengumuman']);
-
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
+});
 
 route::get('/index', [SiswaController::class, 'index']);
 route::get('/persyaratan', [SiswaController::class, 'persyaratan']);
 route::get('/pendaftaran', [SiswaController::class, 'pendaftaran']);
 route::get('/pengumuman', [SiswaController::class, 'pengumuman']);
+
+Route::get('/pengumuman', [PengumumanController::class, 'pengumuman']);
+Route::get('/createpengumuman', [PengumumanController::class, 'create']);
+Route::get('/editpengumuman', [PengumumanController::class, 'edit']);
 
