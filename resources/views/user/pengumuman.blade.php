@@ -12,9 +12,10 @@
 
         <div class="container mb-4 py-5">
             <div class="card" style="max-width: 100%; height: 250px;">
+                @foreach ($pengumumen as $Pengumuman)
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <svg class="bd-placeholder-img" width="100%" height="245" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/></svg>
+                        <img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -23,6 +24,7 @@
                         </div>
                     </div>
                 </div>
+                @endforeach
             </div>
         </div>
         

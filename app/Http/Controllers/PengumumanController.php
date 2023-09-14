@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Pengumuman;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+
 
 class PengumumanController extends Controller
 {
@@ -11,7 +14,8 @@ class PengumumanController extends Controller
      */
     public function index()
     {
-        return view('admin.pengumuman');
+        $pengumumen = Pengumuman::all();
+        return view('admin.pengumuman',compact('pengumumen'));
     }
 
     /**
@@ -39,12 +43,13 @@ class PengumumanController extends Controller
         $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_pengumuman')->extension());
 
         $post = new Pengumuman;
-        $post->judul_post = $request['judul_pengumuman'];
-        $post->isi_post = $request['isi_pengumuman'];
+        $post->penulis = $request['penulis'];
+        $post->judul_pengumuman = $request['judul_pengumuman'];
+        $post->isi_pengumuman = $request['isi_pengumuman'];
         $post->gambar_pengumuman = $path;
         $post->save();
 
-        return redirect('/index');
+        return redirect('/datapengumuman');
     }
 
     /**

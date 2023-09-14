@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Pengumuman;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
@@ -29,9 +30,9 @@ class SiswaController extends Controller
     }
 
     public function pengumuman()
-
     {
-        return view('user.pengumuman');
+        $pengumumen = Pengumuman::all();
+        return view('user.pengumuman',compact('pengumumen'));
     }
 
 }
