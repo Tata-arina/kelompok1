@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Pengumuman;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6684b843dc6909fb14852c5f6b7667838e51e885
 
 class PengumumanController extends Controller
 {
