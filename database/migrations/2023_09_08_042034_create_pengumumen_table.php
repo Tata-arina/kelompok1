@@ -15,8 +15,9 @@ return new class extends Migration
             $table->id();
             // $table->foreignId('users_id')->constrained();
             $table->string('judul_pengumuman', 100);
-            $table->string('gambar_pengumuman', 100);
             $table->text('isi_pengumuman');
+            $table->string('gambar_pengumuman', 100);
+           
             $table->timestamps();
         });
     }
