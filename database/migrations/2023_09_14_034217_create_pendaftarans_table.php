@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('pendaftarans', function (Blueprint $table) {
             $table->id();
+            $table->string('namasiswa', 30);
+            $table->string('nisn', 15);
+            $table->text('tempatlahir');
+            $table->date('tanggallahir');
+            $table->string('agama', 30);
+            $table->string('jeniskelamin', 30);
+            $table->string('kewarganegaraan', 20);
+            $table->text('alamat');
             $table->timestamps();
         });
     }
