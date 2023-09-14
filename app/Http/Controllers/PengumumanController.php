@@ -19,7 +19,7 @@ class PengumumanController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.createpengumuman');
     }
 
     /**
@@ -27,7 +27,24 @@ class PengumumanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate(
+            [
+                'judul_pengumuman' => 'required',
+                'gambar_pengumuman' => 'mimes:png,jpg,gif|image|max:5048',
+                'isi_pengumuman' => 'required',
+            ]
+        );
+
+        $file = $request->file('gambar_pengumuman');
+        $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_pengumuman')->extension());
+
+        $post = new Post;
+        $post->judul_post = $request['judul_pengumuman'];
+        $post->isi_post = $request['isi_pengumuman'];
+        $post->gambar_pengumuman = $path;
+        $post->save();
+
+        return redirect('/index');
     }
 
     /**
@@ -43,7 +60,7 @@ class PengumumanController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('admin.editpengumuman');
     }
 
     /**

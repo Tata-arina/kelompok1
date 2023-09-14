@@ -24,7 +24,7 @@
                             <input type="file" class="form-control" id="gambar_post" name="gambar_post" accept="image/*">
                         </div>
                         <div class="text-end">
-                            <button type="submit" class="btn bg-btn">post</button>
+                            <button type="submit" class="btn btn-secondary">post</button>
                         </div>
                     </form>
                 </div>
