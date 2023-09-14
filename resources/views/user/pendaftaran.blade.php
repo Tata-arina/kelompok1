@@ -26,23 +26,23 @@
                                     <div class="table-responsive" style="overflow-x:hidden;">
                                         <div class="row">
                                             <div class= "col-sm-6">
-                                                <label for="nama_lengkap" class="form-label">Nama Lengkap*</label>
-                                                <input type="text" maxlength="50" class="form-control" id="nama_lengkap" name="nama_lengkap" placeholder="Nama Lengkap">
+                                                <label for="namasiswa" class="form-label">Nama Lengkap*</label>
+                                                <input type="text" maxlength="50" class="form-control" id="namasiswa" name="namasiswa" placeholder="Nama Siswa">
                                             </div>
                                             <div class= "col-sm-6">
-                                                <label for="nis_nisn" class="form-label">NISN*</label>
-                                                <input type="text" maxlength="10" class="form-control" id="nis_nisn" name="nis_nisn" placeholder="NISN">
+                                                <label for="nisn" class="form-label">NISN*</label>
+                                                <input type="text" maxlength="10" class="form-control" id="nisn" name="nisn" placeholder="NISN">
                                             </div>
                                         </div>
 
                                         <div class="row">
                                             <div class= "col-sm-6">
-                                                <label for="tempat_lahir" class="form-label mt-2">Tempat Lahir*</label>
-                                                <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir">
+                                                <label for="tempatlahir" class="form-label mt-2">Tempat Lahir*</label>
+                                                <input type="text" class="form-control" id="tempatlahir" name="tempatlahir" placeholder="Tempat Lahir">
                                             </div>
                                             <div class= "col-sm-6">
-                                                <label for="tanggal_lahir" class="form-label mt-2">Tanggal Lahir*</label>
-                                                <input type="date" class="form-control" id="tanggal_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir">
+                                                <label for="tanggallahir" class="form-label mt-2">Tanggal Lahir*</label>
+                                                <input type="date" class="form-control" id="tanggallahir" name="tanggallahir" placeholder="Tanggal Lahir">
                                             </div>
                                         </div>
 
@@ -60,7 +60,7 @@
                                                 </select>
                                             </div>
                                             <div class= "col-sm-6">
-                                                <label for="jenis_kelamin" class="form-label mt-2">Jenis Kelamin*</label> <br>
+                                                <label for="jeniskelamin" class="form-label mt-2">Jenis Kelamin*</label> <br>
                                                 <input type="radio" id="Laki-laki" name="gender" value="Laki-laki"><label for="Laki-laki">Laki-laki</label> <br>
                                                 <input type="radio" id="Perempuan" name="gender" value="Perempuan"><label for="Perempuan">Perempuan</label>
                                             </div>
@@ -90,12 +90,12 @@
                                     <div class="table-responsive" style="overflow-x:hidden;">
                                         <div class="row">
                                             <div class= "col-sm-6">
-                                                <label for="namalengkap_ayah" class="form-label">Nama Lengkap Ayah*</label>
-                                                <input type="text" maxlength="50" class="form-control" id="namalengkap_ayah" name="namalengkap_ayah" placeholder="Nama Lengkap Ayah">
+                                                <label for="namaayah" class="form-label">Nama Lengkap Ayah*</label>
+                                                <input type="text" maxlength="50" class="form-control" id="namaayah" name="namaayah" placeholder="Nama Lengkap Ayah">
                                             </div>
                                             <div class= "col-sm-6">
                                                 <label for="nikayah" class="form-label">NIK Ayah*</label>
-                                                <input type="text" maxlength="10" class="form-control" id="nik" name="nik" placeholder="NIK Ayah">
+                                                <input type="text" maxlength="10" class="form-control" id="nikayah" name="nikayah" placeholder="NIK Ayah">
                                             </div>
                                         </div>
 
@@ -129,8 +129,8 @@
 
                                         <div class="row">
                                             <div class= "col-sm-6">
-                                                <label for="agama" class="form-label mt-2">Agama*</label>
-                                                <select class="form-control" name="agama">
+                                                <label for="agamaayah" class="form-label mt-2">Agama*</label>
+                                                <select class="form-control" name="agamaayah">
                                                     <option selected>---Pilih Agama---</option>
                                                     <option value="islam">Islam</option>
                                                     <option value="kristen">Kristen</option>
@@ -141,7 +141,7 @@
                                                 </select>
                                             </div>
                                             <div class="col-sm-6">
-                                                <label for="alamat" class="form-label mt-2">Alamat</label>
+                                                <label for="alamatayah" class="form-label mt-2">Alamat</label>
                                                 <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat">
                                             </div>
                                         </div>
@@ -150,8 +150,8 @@
                                             
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <label for="namalengkap_ibu" class="form-label">Nama Lengkap Ibu*</label>
-                                                <input type="text" maxlength="50" class="form-control" id="namalengkap_ibu" name="namalengkap_ibu" placeholder="Nama Lengkap Ibu">
+                                                <label for="namaibu" class="form-label">Nama Lengkap Ibu*</label>
+                                                <input type="text" maxlength="50" class="form-control" id="namaibu" name="namaibu" placeholder="Nama Lengkap Ibu">
                                             </div>
                                             <div class= "col-sm-6">
                                                 <label for="nikibu" class="form-label">NIK Ibu*</label>
@@ -189,8 +189,8 @@
 
                                         <div class="row">
                                             <div class= "col-sm-6">
-                                                <label for="agama" class="form-label mt-2">Agama*</label>
-                                                <select class="form-control" name="agama">
+                                                <label for="agamaibu" class="form-label mt-2">Agama*</label>
+                                                <select class="form-control" name="agamaibu">
                                                     <option selected>---Pilih Agama---</option>
                                                     <option value="islam">Islam</option>
                                                     <option value="kristen">Kristen</option>
@@ -201,8 +201,8 @@
                                                 </select>
                                             </div>
                                             <div class="col-sm-6">
-                                                <label for="alamat" class="form-label mt-2">Alamat</label>
-                                                <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat">
+                                                <label for="alamatibu" class="form-label mt-2">Alamat</label>
+                                                <input type="text" class="form-control" id="alamatibu" name="alamatibu" placeholder="Alamat">
                                             </div>
                                             <div class="text-end mt-3">
                                                 <button type="submit" class="btn btn-secondary">Kirim</button>
