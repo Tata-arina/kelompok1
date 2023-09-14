@@ -5,7 +5,7 @@
         <div class="container mb-5 mt-5">
             <table class="table">
                 <thead>
-                <a href="/createpengumuman" class="btn bg-btn mb-2">Tambahkan Pengumuman</a>
+                <a href="/createpengumuman" class="btn btn-secondary mb-5 mt-5">Tambahkan Pengumuman</a>
                     <tr>
                     <th scope="col">No</th>
                     <th scope="col">First</th>
@@ -21,9 +21,8 @@
                         <td>Otto</td>
                         <td>@mdo</td>
                         <td>
-                            <a href="/editpengumuman" class="btn bg-btn">edit</a>
-                            <a href="/" class="btn bg-btn">delete</a>
-                            <a href="/" class="btn bg-btn">detail</a>
+                            <a href="/editpengumuman" class="btn btn-danger">edit</a>
+                            <a href="/" class="btn btn-warning">delete</a>
                         </td>
                     </tr>
 
@@ -33,9 +32,8 @@
                         <td>Thornton</td>
                         <td>@fat</td>
                         <td>
-                            <a href="/editpengumuman" class="btn bg-btn">edit</a>
-                            <a href="/" class="btn bg-btn">delete</a>
-                            <a href="/" class="btn bg-btn">detail</a>
+                            <a href="/editpengumuman" class="btn btn-danger">edit</a>
+                            <a href="/" class="btn btn-warning">delete</a>
                         </td>
                     </tr>
 
@@ -44,9 +42,8 @@
                         <td colspan="2">Larry the Bird</td>
                         <td>@twitter</td>
                         <td>
-                            <a href="/editpengumuman" class="btn bg-btn">edit</a>
-                            <a href="/" class="btn bg-btn">delete</a>
-                            <a href="/" class="btn bg-btn">detail</a>
+                            <a href="/editpengumuman" class="btn btn-danger">edit</a>
+                            <a href="/" class="btn btn-warning">delete</a>
                         </td>
                     </tr>
                 </tbody>

@@ -3,7 +3,7 @@
 @section('content')
     <section id="blog">
         <div class="container py-5">
-            <h3 class="fw-bold">Membuat Pengumuman</h3>
+            <h3 class="fw-bold mt-4">Membuat Pengumuman</h3>
             <div class="card">
                 <div class="card-body">   
                     <form action="/" method="post" enctype="multipart/form-data">

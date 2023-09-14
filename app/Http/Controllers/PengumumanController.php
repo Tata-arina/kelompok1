@@ -38,7 +38,7 @@ class PengumumanController extends Controller
         $file = $request->file('gambar_pengumuman');
         $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_pengumuman')->extension());
 
-        $post = new Post;
+        $post = new Pengumuman;
         $post->judul_post = $request['judul_pengumuman'];
         $post->isi_post = $request['isi_pengumuman'];
         $post->gambar_pengumuman = $path;
