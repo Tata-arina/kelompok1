@@ -9,7 +9,7 @@ class PengumumanController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function dashboard()
+    public function index()
     {
         return view('admin.pengumuman');
     }
@@ -19,7 +19,7 @@ class PengumumanController extends Controller
      */
     public function create()
     {
-        return view('admin.createpengumuman');
+        //
     }
 
     /**
@@ -41,10 +41,9 @@ class PengumumanController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    // public function edit(string $id)
-    public function edit()
+    public function edit(string $id)
     {
-        return view('admin.editpengumuman');
+        //
     }
 
     /**

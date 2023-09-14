@@ -25,7 +25,8 @@
     <!-- css -->
     <style type="text/css">
         :root {
-            --warna-bg-info: #1b5b9c;;
+            --warna-bg-info: #1b5b9c;
+            ;
         }
 
         body {
@@ -91,7 +92,7 @@
             border-radius: 8px 8px 0px 0px
         }
 
-        .jdl-widget h5{
+        .jdl-widget h5 {
             height: 15px;
         }
 
@@ -100,10 +101,9 @@
             padding: 6px;
             border-radius: 0px 0px 8px 8px
         }
-
     </style>
     <!-- css -->
-    
+
 </head>
 
 <body>
@@ -124,7 +124,7 @@
                         <a class="nav-link active" aria-current="page" href="/dashboard">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/pengumumann">Pengumuman</a>
+                        <a class="nav-link active" aria-current="page" href="/datapengumuman">Pengumuman</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/pendaftaran">Pendaftaran</a>
@@ -136,7 +136,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/login"></a></li>
                             <li><a class="dropdown-item" href="/sign up"></a></li>
-                        </ul> 
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -222,4 +222,5 @@
     </script>
     <!-- js -->
 </body>
+
 </html>

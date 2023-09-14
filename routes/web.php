@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiswaController;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PengumumanController;
 
 
 /*
@@ -20,12 +20,14 @@ Route::get('/dashboard', function () {
     return view('admin.dashboard');
 });
 
+// route calon siswa
+route::get('/', [SiswaController::class, 'index']);
 route::get('/index', [SiswaController::class, 'index']);
 route::get('/persyaratan', [SiswaController::class, 'persyaratan']);
 route::get('/pendaftaran', [SiswaController::class, 'pendaftaran']);
 route::get('/pengumuman', [SiswaController::class, 'pengumuman']);
 
-Route::get('/pengumuman', [PengumumanController::class, 'pengumuman']);
+// route admin
+Route::get('/datapengumuman', [PengumumanController::class, 'index']);
 Route::get('/createpengumuman', [PengumumanController::class, 'create']);
 Route::get('/editpengumuman', [PengumumanController::class, 'edit']);
-
