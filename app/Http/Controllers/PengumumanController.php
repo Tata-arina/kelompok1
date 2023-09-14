@@ -5,10 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Pengumuman;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-<<<<<<< HEAD
-
-=======
->>>>>>> 6684b843dc6909fb14852c5f6b7667838e51e885
 
 class PengumumanController extends Controller
 {
@@ -45,12 +41,11 @@ class PengumumanController extends Controller
         $file = $request->file('gambar_pengumuman');
         $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_pengumuman')->extension());
 
-        $post = new Pengumuman;
-        $post->penulis = $request['penulis'];
-        $post->judul_pengumuman = $request['judul_pengumuman'];
-        $post->isi_pengumuman = $request['isi_pengumuman'];
-        $post->gambar_pengumuman = $path;
-        $post->save();
+        $pengumumen = new Pengumuman;
+        $pengumumen->judul_pengumuman = $request['judul_pengumuman'];
+        $pengumumen->isi_pengumuman = $request['isi_pengumuman'];
+        $pengumumen->gambar_pengumuman = $path;
+        $pengumumen->save();
 
         return redirect('/datapengumuman');
     }

@@ -8,10 +8,6 @@
                 <div class="card-body">   
                     <form action="/savepengumuman" method="post" enctype="multipart/form-data">
                         @csrf 
-                        <div class= "mb-3">
-                            <label for="penulis" class="form-label">Penulis</label>
-                            <input type="text" class="form-control" id="penulis" name="penulis">
-                         </div>
                         <div class="mb-3">
                             <label for="judul_post" class="form-label">Judul Pengumuman</label>
                             <input type="text" class="form-control" id="judul_pengumuman" name="judul_pengumuman" placeholder="judul pengumuman">

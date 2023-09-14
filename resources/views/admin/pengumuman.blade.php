@@ -8,10 +8,10 @@
                 <a href="/createpengumuman" class="btn btn-secondary mb-5 mt-5">Tambahkan Pengumuman</a>
                     <tr>
                     <th scope="col">No</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Second</th>
-                    <th scope="col">Third</th>
-                    <th scope="col">Fourth</th>
+                    <th scope="col">Judul</th>
+                    <th scope="col">Isi</th>
+                    <th scope="col">Gambar</th>
+                    <th scope="col">Option</th>
                     </tr>
                 </thead>
                 <tbody>

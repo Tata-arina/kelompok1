@@ -14,10 +14,9 @@ return new class extends Migration
         Schema::create('pengumumen', function (Blueprint $table) {
             $table->id();
             // $table->foreignId('users_id')->constrained();
-            $table->string('penulis');
-            $table->text('isi_pengumuman');
-            $table->string('judul_pengumuman', 50);
+            $table->string('judul_pengumuman', 100);
             $table->string('gambar_pengumuman', 100);
+            $table->text('isi_pengumuman');
             $table->timestamps();
         });
     }
