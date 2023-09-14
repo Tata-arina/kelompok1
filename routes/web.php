@@ -31,3 +31,5 @@ route::get('/pengumuman', [SiswaController::class, 'pengumuman']);
 Route::get('/datapengumuman', [PengumumanController::class, 'index']);
 Route::get('/createpengumuman', [PengumumanController::class, 'create']);
 Route::get('/editpengumuman', [PengumumanController::class, 'edit']);
+
+Route::resource('admin', 'AdminController');
