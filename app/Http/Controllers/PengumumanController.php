@@ -32,8 +32,8 @@ class PengumumanController extends Controller
     {
         $request->validate(
             [
-                'judul_pengumuman' => 'required',
                 'gambar_pengumuman' => 'mimes:png,jpg,gif|image|max:5048',
+                'judul_pengumuman' => 'required',
                 'isi_pengumuman' => 'required',
             ]
         );
