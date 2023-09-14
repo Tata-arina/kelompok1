@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string('jeniskelamin', 30);
             $table->string('kewarganegaraan', 20);
             $table->text('alamat');
-            $table->string('namaayah' ,30);
-            $table->string('nikayah' ,15);
+            $table->string('namaayah', 30);
+            $table->string('nikayah', 15);
             $table->string('pendidikanayah', 30);
             $table->string('pekerjaanayah', 30);
             $table->string('agamaayah', 30);
