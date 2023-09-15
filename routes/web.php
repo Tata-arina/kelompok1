@@ -32,8 +32,9 @@ Route::get('/datapengumuman', [PengumumanController::class, 'index']);
 Route::get('/createpengumuman', [PengumumanController::class, 'create']);
 Route::get('/editpengumuman', [PengumumanController::class, 'edit']);
 Route::post('/savepengumuman', [PengumumanController::class, 'store']);
+Route::put('/updatepengumuman/{id}', [PengumumanController::class, 'update']);
+Route::get('/delete/{id}', [PengumumanController::class, 'destroy']);
 
 
-Route::resource('admin', 'AdminController');
 
 

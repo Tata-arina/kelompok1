@@ -63,7 +63,8 @@ class PengumumanController extends Controller
      */
     public function edit(string $id)
     {
-        return view('admin.editpengumuman');
+        $Pengumuman = Pengumuman::find($id);
+        return view('admin.editpengumuman', compact('Pengumuman'));
     }
 
     /**
@@ -71,7 +72,29 @@ class PengumumanController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate(
+            [
+                'gambar_pengumuman' => 'mimes:png,jpg,jpeg,gif|image|max:5048',
+            ]
+        );
+
+        if ($request->file('gambar_pengumuman')){
+            if ($request->oldImage) {
+                storage::delete($request->oldImage);
+            }
+            $file = $request->file('gambar_pengumuman');
+            $path = $file->storeAs('uploads', time() .'.' . $request->file('gambar_pengumuman')->extension());
+        } else {
+            $path = $request->oldImage;
+        }
+        
+        $pengumumen = Post::find($id);
+        $pengumumen->judul_pengumuman = $request['judul_pengumuman'];
+        $pengumumen->isi_pengumuman = $request['isi_pengumuman'];
+        $pengumumen->gambar_pengumuman = $path;
+        $pengumumen->save();
+
+        return redirect('/datapengumuman');
     }
 
     /**
@@ -79,6 +102,7 @@ class PengumumanController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Pengumuman::destroy('id', $id);
+        return redirect('/datapengumuman');
     }
 }
