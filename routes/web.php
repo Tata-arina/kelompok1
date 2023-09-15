@@ -30,11 +30,15 @@ route::get('/pengumuman', [SiswaController::class, 'pengumuman']);
 // route admin
 Route::get('/datapengumuman', [PengumumanController::class, 'index']);
 Route::get('/createpengumuman', [PengumumanController::class, 'create']);
-Route::get('/editpengumuman', [PengumumanController::class, 'edit']);
+Route::get('/editpengumuman/{id}', [PengumumanController::class, 'edit']);
 Route::post('/savepengumuman', [PengumumanController::class, 'store']);
 Route::put('/updatepengumuman/{id}', [PengumumanController::class, 'update']);
-Route::get('/delete/{id}', [PengumumanController::class, 'destroy']);
+Route::get('/deletepengumuman/{id}', [PengumumanController::class, 'destroy']);
 
 
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

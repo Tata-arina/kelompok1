@@ -20,10 +20,10 @@
                         <th scope="row">1</th>
                         <td>{{$Pengumuman->judul_pengumuman}}</td>
                         <td>{{$Pengumuman->isi_pengumuman}}</td>
-                        <td><img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="20%"></td>
+                        <td><img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="100"></td>
                         <td>
-                            <a href="/editpengumuman" class="btn btn-danger">edit</a>
-                            <a href="/" class="btn btn-warning">delete</a>
+                            <a href="/editpengumuman/{{$Pengumuman->id}}" class="btn btn-danger">edit</a>
+                            <a href="/deletepengumuman/{{$Pengumuman->id}}" class="btn btn-warning">delete</a>
                         </td>
                     </tr>
                     @endforeach

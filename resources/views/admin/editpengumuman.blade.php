@@ -11,7 +11,7 @@
                         @csrf
                         <div class="mb-3">
                             <label for="judul_pengumuman" class="form-label">Judul Pengumuman</label>
-                            <input type="text" class="form-control" id="judul_pengumuman" name="judul_pengumuman" value="{{ $Pengumuman->judul_post}}">>
+                            <input type="text" class="form-control" id="judul_pengumuman" name="judul_pengumuman" value="{{ $Pengumuman->judul_pengumuman}}">
                         </div>
                         <div class="mb-3">
                             <label for="isi_pengumuman" class="form-label">Isi Pengumuman</label>
