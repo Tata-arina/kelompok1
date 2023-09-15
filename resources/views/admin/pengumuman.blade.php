@@ -17,12 +17,12 @@
                 <tbody>
                     @foreach ($pengumumen as $Pengumuman)
                     <tr>
-                        <th scope="row">1</th>
+                        <th scope="row">{{ $loop->iteration }}</th>
                         <td>{{$Pengumuman->judul_pengumuman}}</td>
                         <td>{{$Pengumuman->isi_pengumuman}}</td>
-                        <td><img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="20%"></td>
+                        <td><img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="100"></td>
                         <td>
-                            <a href="/editpengumuman" class="btn btn-danger">edit</a>
+                            <a href="/editpengumuman/{{ $Pengumuman->id }}" class="btn btn-danger">edit</a>
                             <a href="/" class="btn btn-warning">delete</a>
                         </td>
                     </tr>
