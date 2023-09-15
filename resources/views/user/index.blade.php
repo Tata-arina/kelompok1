@@ -54,6 +54,14 @@
                     <img src="image/kelender19.jpeg" width="100%" alt="kelender">
                 </div>
             </div>
+            <div class="widget">
+                <div class="jdl-widget">
+                    <h5>Login</h5>
+                </div>
+                <div class="isi-widget">
+                    <img src="image/kelender19.jpeg" width="100%" alt="kelender">
+                </div>
+            </div>
         </div>
     </div>
 

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\PengumumanController;
 
@@ -34,6 +35,9 @@ Route::get('/editpengumuman/{id}', [PengumumanController::class, 'edit']);
 Route::post('/savepengumuman', [PengumumanController::class, 'store']);
 Route::put('/updatepengumuman/{id}', [PengumumanController::class, 'update']);
 Route::get('/deletepengumuman/{id}', [PengumumanController::class, 'destroy']);
+
+Route::get('/user', [Controller::class, 'index']);
+
 
 
 
