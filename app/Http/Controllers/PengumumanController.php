@@ -14,7 +14,7 @@ class PengumumanController extends Controller
     public function index()
     {
         $pengumumen = Pengumuman::all();
-        return view('admin.pengumuman',compact('pengumumen'));
+        return view('admin.pengumuman', compact('pengumumen'));
     }
 
     /**
@@ -39,7 +39,7 @@ class PengumumanController extends Controller
         );
 
         $file = $request->file('gambar_pengumuman');
-        $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_pengumuman')->extension());
+        $path = $file->storeAs('uploads', time() . '.' . $request->file('gambar_pengumuman')->extension());
 
         $pengumumen = new Pengumuman;
         $pengumumen->judul_pengumuman = $request['judul_pengumuman'];
@@ -78,16 +78,16 @@ class PengumumanController extends Controller
             ]
         );
 
-        if ($request->file('gambar_pengumuman')){
+        if ($request->file('gambar_pengumuman')) {
             if ($request->oldImage) {
                 storage::delete($request->oldImage);
             }
             $file = $request->file('gambar_pengumuman');
-            $path = $file->storeAs('uploads', time() .'.' . $request->file('gambar_pengumuman')->extension());
+            $path = $file->storeAs('uploads', time() . '.' . $request->file('gambar_pengumuman')->extension());
         } else {
             $path = $request->oldImage;
         }
-        
+
         $pengumumen = Post::find($id);
         $pengumumen->judul_pengumuman = $request['judul_pengumuman'];
         $pengumumen->isi_pengumuman = $request['isi_pengumuman'];
