@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\PengumumanController;
@@ -21,8 +22,12 @@ Route::get('/dashboard', function () {
     return view('admin.dashboard');
 });
 
+Auth::routes();
+
 // route calon siswa
 route::get('/', [SiswaController::class, 'index']);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 route::get('/index', [SiswaController::class, 'index']);
 route::get('/persyaratan', [SiswaController::class, 'persyaratan']);
 route::get('/pendaftaran', [SiswaController::class, 'pendaftaran']);
