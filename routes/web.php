@@ -44,10 +44,3 @@ Route::get('/deletepengumuman/{id}', [PengumumanController::class, 'destroy']);
 Route::get('/user', [Controller::class, 'index']);
 
 
-
-
-
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
