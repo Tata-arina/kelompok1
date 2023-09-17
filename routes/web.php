@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\PengumumanController;
-
+use App\Http\Controllers\PendaftaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +34,9 @@ Route::get('/editpengumuman', [PengumumanController::class, 'edit']);
 Route::post('/savepengumuman', [PengumumanController::class, 'store']);
 Route::put('/updatepengumuman/{id}', [PengumumanController::class, 'update']);
 Route::get('/delete/{id}', [PengumumanController::class, 'destroy']);
+
+// route pendaftaran
+Route::post('/savependaftaran', [PendaftaranController::class, 'store']);
 
 
 

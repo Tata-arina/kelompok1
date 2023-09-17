@@ -22,17 +22,17 @@ return new class extends Migration
             $table->string('kewarganegaraan', 20);
             $table->text('alamat');
             $table->string('namaayah', 30);
-            $table->text('nikayah', 15);
-            $table->string('pendidikanayah' 20);
-            $table->string('pekerjaanayah' 20);
-            $table->string('agamaayah' 30);
-            $table->text('alamat');
+            $table->string('nikayah', 15);
+            $table->string('pendidikanayah', 20);
+            $table->string('pekerjaanayah', 20);
+            $table->string('agamaayah', 30);
+            $table->text('alamatayah');
             $table->string('namaibu', 30);
-            $table->text('nikibu' 15);
-            $table->string('pendidikanibu' 20);
-            $table->string('pekerjaanibu' 20);
-            $table->string('agamaibu' 30);
-            $table->text('alamat');
+            $table->string('nikibu', 15);
+            $table->string('pendidikanibu', 20);
+            $table->string('pekerjaanibu', 20);
+            $table->string('agamaibu', 30);
+            $table->text('alamatibu');
             $table->timestamps();
         });
 

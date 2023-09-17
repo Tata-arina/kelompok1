@@ -17,7 +17,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <form method="post" action="/saveblog" enctype="multipart/form-data">
+                            <form method="post" action="/savependaftaran" enctype="multipart/form-data">
                                 @csrf
                                 <div class="d-sm-flex justify-content-between align-items-center">
                                     <h2>Data Pribadi</h2>
