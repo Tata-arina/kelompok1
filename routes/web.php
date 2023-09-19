@@ -46,4 +46,5 @@ Route::post('/savependaftaran', [PendaftaranController::class, 'store']);
 
 
 Route::get('/deletepengumuman/{id}', [PengumumanController::class, 'destroy']);
+
 Route::get('/user', [Controller::class, 'index']);
