@@ -22,9 +22,8 @@
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
                             <td>
-                                <a href="/edituser/{{ $user->id }}" class="btn bg-btn">edit</a>
-                                <a href="/deleteuser/{{ $user->id }}" class="btn bg-btn">delete</a>
-                                <a href="/" class="btn bg-btn">detail</a>
+                                <a href="/edituser/{{ $user->id }}" class="btn btn-danger">edit</a>
+                                <a href="/deleteuser/{{ $user->id }}" class="btn btn-warning">delete</a>
                             </td>
                         </tr>
                     @endforeach

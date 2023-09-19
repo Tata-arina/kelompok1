@@ -28,8 +28,8 @@
                                 width="30%" alt="Foto">
                         </div>
                         <div class="text-end">
-                            <a href="/datapengumuman" class="btn bg-btn">Kembali</a>
-                            <button type="submit" class="btn bg-btn">Update</button>
+                            <a href="/datapengumuman" class="btn btn-danger">Kembali</a>
+                            <button type="submit" class="btn btn-warning">Update</button>
                         </div>
                     </form>
                 </div>
