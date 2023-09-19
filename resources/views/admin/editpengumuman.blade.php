@@ -4,17 +4,16 @@
 @endsection
 @section('content')
     <section id="blog">
-        <div class="container py-5">
+        <div class="container py-5 mt-5">
             <h3 class="fw-bold">Edit Pengumuman</h3>
             <div class="card">
                 <div class="card-body">
-                    <form action="/updatepengumuman {{ $Pengumuman->id }}" method="post" enctype="multipart/form-data">
+                    <form action="/updatepengumuman/{{ $Pengumuman->id }}" method="post" enctype="multipart/form-data">
                         @method('PUT')
                         @csrf
                         <div class="mb-3">
                             <label for="judul_pengumuman" class="form-label">Judul Pengumuman</label>
                             <input type="text" class="form-control" id="judul_pengumuman" name="judul_pengumuman" value="{{ $Pengumuman->judul_pengumuman}}">
-                            <input type="text" class="form-control" id="judul_pengumuman" name="judul_pengumuman" value="{{ $Pengumuman->judul_pengumuman }}">
                         </div>
                         <div class="mb-3">
                             <label for="isi_pengumuman" class="form-label">Isi Pengumuman</label>
@@ -29,7 +28,7 @@
                                 width="30%" alt="Foto">
                         </div>
                         <div class="text-end">
-                            <a href="/pengumuman" class="btn bg-btn">Kembali</a>
+                            <a href="/datapengumuman" class="btn bg-btn">Kembali</a>
                             <button type="submit" class="btn bg-btn">Update</button>
                         </div>
                     </form>
