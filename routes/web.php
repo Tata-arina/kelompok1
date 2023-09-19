@@ -42,7 +42,10 @@ Route::put('/updatepengumuman/{id}', [PengumumanController::class, 'update']);
 Route::get('/delete/{id}', [PengumumanController::class, 'destroy']);
 
 // route pendaftaran
+Route::get('/datapendaftarans', [PendaftaranController::class, 'index']);
+Route::get('/createpengumumans', [PendaftaranController::class, 'create']);
 Route::post('/savependaftaran', [PendaftaranController::class, 'store']);
+
 
 
 Route::get('/deletepengumuman/{id}', [PengumumanController::class, 'destroy']);
