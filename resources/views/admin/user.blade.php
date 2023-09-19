@@ -1,32 +1,33 @@
 @extends('admin.mainapps')
-@section('title')Pengumuman @endsection
+@section('title')
+    User
+@endsection
 @section('content')
-    <section id="pengumuman">
+    <section id="users">
         <div class="container mb-5 mt-5">
             <table class="table">
                 <thead>
-                <a href="/register" class="btn btn-secondary mb-5 mt-5">Tambahkan User</a>
+                    <a href="/register" class="btn btn-secondary mb-5 mt-5">Tambahkan User</a>
                     <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Level</th>
-                    <th scope="col">Option</th>
+                        <th scope="col">No</th>
+                        <th scope="col">Nama</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Option</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- @foreach ($user as $Pengumuman)
-                    <tr>
-                        <th scope="row">{{ $loop->iteration }}</th>
-                        <td>{{$Pengumuman->judul_pengumuman}}</td>
-                        <td>{{$Pengumuman->isi_pengumuman}}</td>
-                        <td><img src="{{ asset('storage/' . $Pengumuman->gambar_pengumuman) }}" alt="" width="100"></td>
-                        <td>
-                            <a href="/editpengumuman/{{$Pengumuman->id}}" class="btn btn-danger">edit</a>
-                            <a href="/deletepengumuman/{{$Pengumuman->id}}" class="btn btn-warning">delete</a>
-                        </td>
-                    </tr>
-                    @endforeach -->
+                    @foreach ($user as $user)
+                        <tr>
+                            <th scope="row">{{ $loop->iteration }}</th>
+                            <td>{{ $user->name }}</td>
+                            <td>{{ $user->email }}</td>
+                            <td>
+                                <a href="/edituser/{{ $user->id }}" class="btn bg-btn">edit</a>
+                                <a href="/deleteuser/{{ $user->id }}" class="btn bg-btn">delete</a>
+                                <a href="/" class="btn bg-btn">detail</a>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
 
