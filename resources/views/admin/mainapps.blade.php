@@ -130,13 +130,7 @@
                         <a class="nav-link active" aria-current="page" href="/pendaftaran">Pendaftaran</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-house-door-fill"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/login"></a></li>
-                            <li><a class="dropdown-item" href="/sign up"></a></li>
-                        </ul>
+                        <a class="nav-link active" aria-current="page" href="/user">User</a>
                     </li>
                 </ul>
             </div>

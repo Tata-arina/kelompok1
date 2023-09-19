@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Pengumuman;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class PengumumanController extends Controller
 {
@@ -14,7 +15,7 @@ class PengumumanController extends Controller
     public function index()
     {
         $pengumumen = Pengumuman::all();
-        return view('admin.pengumuman',compact('pengumumen'));
+        return view('admin.pengumuman', compact('pengumumen'));
     }
 
     /**
@@ -39,7 +40,7 @@ class PengumumanController extends Controller
         );
 
         $file = $request->file('gambar_pengumuman');
-        $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_pengumuman')->extension());
+        $path = $file->storeAs('uploads', time() . '.' . $request->file('gambar_pengumuman')->extension());
 
         $pengumumen = new Pengumuman;
         $pengumumen->judul_pengumuman = $request['judul_pengumuman'];
@@ -74,21 +75,23 @@ class PengumumanController extends Controller
     {
         $request->validate(
             [
-                'gambar_pengumuman' => 'mimes:png,jpg,jpeg,gif|image|max:5048',
+                'gambar_pengumuman' => 'mimes:png,jpg,gif|image|max:5048',
             ]
         );
 
-        if ($request->file('gambar_pengumuman')){
-            if ($request->oldImage) {
+        if($request->file('gambar_pengumuman'))
+        {
+            if($request->oldImage) {
                 storage::delete($request->oldImage);
             }
             $file = $request->file('gambar_pengumuman');
-            $path = $file->storeAs('uploads', time() .'.' . $request->file('gambar_pengumuman')->extension());
-        } else {
+            $path = $file->storeAs('uploads', time() .'.'. $request->file('gambar_pengumuman')->extension());
+        }
+        else {
             $path = $request->oldImage;
         }
-        
-        $pengumumen = Post::find($id);
+
+        $pengumumen = Pengumuman::find($id);
         $pengumumen->judul_pengumuman = $request['judul_pengumuman'];
         $pengumumen->isi_pengumuman = $request['isi_pengumuman'];
         $pengumumen->gambar_pengumuman = $path;

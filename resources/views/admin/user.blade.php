@@ -5,17 +5,17 @@
         <div class="container mb-5 mt-5">
             <table class="table">
                 <thead>
-                <a href="/createpengumuman" class="btn btn-secondary mb-5 mt-5">Tambahkan Pengumuman</a>
+                <a href="/register" class="btn btn-secondary mb-5 mt-5">Tambahkan User</a>
                     <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Judul</th>
-                    <th scope="col">Isi</th>
-                    <th scope="col">Gambar</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Level</th>
                     <th scope="col">Option</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($pengumumen as $Pengumuman)
+                    <!-- @foreach ($user as $Pengumuman)
                     <tr>
                         <th scope="row">{{ $loop->iteration }}</th>
                         <td>{{$Pengumuman->judul_pengumuman}}</td>
@@ -26,7 +26,7 @@
                             <a href="/deletepengumuman/{{$Pengumuman->id}}" class="btn btn-warning">delete</a>
                         </td>
                     </tr>
-                    @endforeach
+                    @endforeach -->
                 </tbody>
             </table>
 
